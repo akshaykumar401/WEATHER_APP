@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-radius: none;
+    color: #000;
+    font-family: "Itim", cursive;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #BFECFF;
+}
+
+.container {
+    background-color: #FFF6E3;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    font-family: "Playwrite GB S", cursive;
+    text-align: center;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    color: cyan;
+}
+
+.selectDiv {
+    display: flex;
+    font-size: 1rem;
+}
+
+#city {
+    width: 40%;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: #FFF6E3;
+}
+
+#cityLabel {
+    font-size: 1.2rem;
+    padding-left: 1.8rem;
+    padding-right: 0.5rem;
+}
+
+.referance {
+    background-color: #fff;
+    width: 35%;
+    margin-top: 1.3rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.currTemp {
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.now {
+    color: gray;
+}
+
+.allTemp {
+    width: 80%;
+    height: 20vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    border: 2px solid black;
+    margin-top: 1.3rem;
+    border-radius: 20px;
+}
+
+.allTempList {
+    padding: 1rem 1.4rem 1rem 1.4rem;
+    list-style-type: none;
+}
+
+/* Responsive Making. */
+@media (max-width: 450px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        border-radius: none;
+    }
+
+    body {
+        background-color: #FFF6E3;
+    }
+
+    #header {
+        padding-bottom: 3rem;
+    }
+
+    .selectDiv {
+        padding-bottom: 3rem;
+    }
+
+    .allTemp {
+        margin-top: 5rem;
+    }
+}
+
+
+
