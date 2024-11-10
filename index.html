@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="ICON.png">
+</head>
+<body>
+    <div class="container">
+        <h1 id="header">Weather App</h1>
+
+        <div class="selectDiv">
+            <label for="city" id="cityLabel">Choose Any City: </label>
+            <select name="city" id="city">
+                <option value="Select">Select</option>
+            </select>
+        </div>
+
+        <img src="./thinking.gif" class="referance">
+
+        <div class="currTempDiv">
+            <p class="currTemp">Current temprature is
+            </br>
+                <span class="now">
+                    00:00 O°C
+                </span>
+            </p>
+        </div>
+
+        <div class="allTemp">
+            <ul class="allTempList">
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
