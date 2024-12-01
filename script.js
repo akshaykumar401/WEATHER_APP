@@ -33,11 +33,11 @@ function API(tempVal){
     })
     .then((data) => {
         if(data.temperature_2m[hrs] < 15){
-            referImage.src="./cold.gif";
+            referImage.src="./src/cold.gif";
         } else if(data.temperature_2m[hrs] >= 15 && data.temperature_2m[hrs] < 40){
-            referImage.src="./Spring.gif";
+            referImage.src="./src/Spring.gif";
         } else {
-            referImage.src="./Hot.gif";
+            referImage.src="./src/Hot.gif";
         }
 
         currTemp.innerHTML = `${data.time[hrs].slice(11)}  ${data.temperature_2m[hrs]}°C`;
